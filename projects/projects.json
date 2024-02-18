@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Restaurant Webiste",
+    "desc": "Restaurant Website Created using HTML CSS and JS ",
+    "image": "ajwabakers",
+    "category": "mern",
+    "links": {
+      "view": "https://maazmedia.github.io/ajwabakers",
+      "code": "https://github.com/maazmedia/ajwabakers"
+    }
+  },
+  {
+    "name": "Tic Tac Toe",
+    "desc": "This a Little Tic Tac Toe game created by me to showcase my javascript skills ",
+    "image": "tictoe",
+    "category": "mern",
+    "links": {
+      "view": "https://maazmedia.github.io/Tic-Tac-Toe/",
+      "code": "https://github.com/MaazMedia/Tic-Tac-Toe/"
+    }
+  },
+  {
+    "name": "Ceaser Cipher Encryption",
+    "desc": "",
+    "image": "ceasar",
+    "category": "mern",
+    "links": {
+      "view": "https://maazmedia.github.io/Cesar-Cipher-Encryption/",
+      "code": "https://github.com/MaazMedia/Cesar-Cipher-Encryption/"
+    }
+  },
+  {
+    "name": "Age Calculator",
+    "desc": "This is a small project created for my school assignment ",
+    "image": "age",
+    "category": "basicweb",
+    "links": {
+      "view": "https://maazmedia.github.io/Tic-Tac-Toe/",
+      "code": "https://github.com/MaazMedia/Tic-Tac-Toe/"
+    }
+  },
+  {
+    "name": "TO-DO List",
+    "desc": "As a showcase of my Javascript skills, I created a simple todo-list app. You can access it at ",
+    "image": "todo",
+    "category": "basicweb",
+    "links": {
+      "view": "https://maazmedia.github.io/todo-list/",
+      "code": "https://github.com/MaazMedia/todo-list/"
+    }
+  }
+]
