@@ -21,7 +21,7 @@
   },
   {
     "name": "Ceaser Cipher Encryption",
-    "desc": "",
+    "desc": "I learned this method in school, but found it time-consuming to encrypt by hand. So, I created a website to help me out.",
     "image": "ceasar",
     "category": "mern",
     "links": {
