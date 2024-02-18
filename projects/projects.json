@@ -2,7 +2,7 @@
   {
     "name": "Restaurant Webiste",
     "desc": "Restaurant Website Created using HTML CSS and JS ",
-    "image": "https://raw.githubusercontent.com/MaazMedia/Portfolio/main/assets/images/projects/ajwabakers",
+    "image": "ajwabakers",
     "category": "mern",
     "links": {
       "view": "https://maazmedia.github.io/ajwabakers",
@@ -12,7 +12,7 @@
   {
     "name": "Tic Tac Toe",
     "desc": "This a Little Tic Tac Toe game created by me to showcase my javascript skills ",
-    "image": "https://raw.githubusercontent.com/MaazMedia/Portfolio/main/assets/images/projects/tictoe",
+    "image": "tictoe",
     "category": "mern",
     "links": {
       "view": "https://maazmedia.github.io/Tic-Tac-Toe/",
@@ -22,7 +22,7 @@
   {
     "name": "Ceaser Cipher Encryption",
     "desc": "I learned this method in school, but found it time-consuming to encrypt by hand. So, I created a website to help me out.",
-    "image": "https://raw.githubusercontent.com/MaazMedia/Portfolio/main/assets/images/projects/ceasar",
+    "image": "ceasar",
     "category": "mern",
     "links": {
       "view": "https://maazmedia.github.io/Cesar-Cipher-Encryption/",
@@ -42,7 +42,7 @@
   {
     "name": "TO-DO List",
     "desc": "As a showcase of my Javascript skills, I created a simple todo-list app. You can access it at ",
-    "image": "https://raw.githubusercontent.com/MaazMedia/Portfolio/main/assets/images/projects/todo",
+    "image": "todo",
     "category": "basicweb",
     "links": {
       "view": "https://maazmedia.github.io/todo-list/",
