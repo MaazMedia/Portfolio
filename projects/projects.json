@@ -35,18 +35,28 @@
     "image": "age",
     "category": "basicweb",
     "links": {
-      "view": "https://maazmedia.github.io/Tic-Tac-Toe/",
-      "code": "https://github.com/MaazMedia/Tic-Tac-Toe/"
+      "view": "https://maazmedia.github.io/estimated-age",
+      "code": "https://github.com/MaazMedia/estimated-age"
     }
   },
   {
     "name": "TO-DO List",
-    "desc": "As a showcase of my Javascript skills, I created a simple todo-list app. You can access it at ",
+    "desc": "As a showcase of my Javascript skills, I created a simple todo-list app.",
     "image": "todo",
     "category": "basicweb",
     "links": {
       "view": "https://maazmedia.github.io/todo-list/",
       "code": "https://github.com/MaazMedia/todo-list/"
+    }
+  },
+  {
+    "name": "AceBook",
+    "desc": "AceBook is a FaceBook clone which a made using the frameworks like NextJS and for CSS I used tailwind CSS.",
+    "image": "todo",
+    "category": "basicweb",
+    "links": {
+      "view": "https://acebook.maazsaeed.online",
+      "code": "https://github.com/MaazMedia/AceBook"
     }
   }
 ]
