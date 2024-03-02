@@ -52,7 +52,7 @@
   {
     "name": "AceBook",
     "desc": "AceBook is a FaceBook clone which a made using the frameworks like NextJS and for CSS I used tailwind CSS.",
-    "image": "todo",
+    "image": "AceBook",
     "category": "basicweb",
     "links": {
       "view": "https://acebook.maazsaeed.online",
