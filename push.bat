@@ -1,0 +1,9 @@
+@echo off
+echo Adding all changes...
+git add .
+echo Committing changes...
+git commit -m "Pushed Changes"
+echo Pushing to main branch...
+git push -u origin main
+echo Done!
+pause
