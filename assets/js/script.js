@@ -65,10 +65,10 @@ $(document).ready(function () {
 
 document.addEventListener("visibilitychange", function () {
   if (document.visibilityState === "visible") {
-    document.title = "Portfolio | Maaz";
+    document.title = "Genius Devs";
     $("#favicon").attr("href", "assets/images/hero.JPG");
   } else {
-    document.title = "Come Back To Portfolio";
+    document.title = "Come Back, We're waiting for you.";
     $("#favicon").attr("href", "assets/images/favhand.png");
   }
 });
@@ -131,7 +131,6 @@ function showProjects(projects) {
           <p>${project.desc}</p>
           <div class="btns">
             <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
           </div>
         </div>
       </div>
@@ -172,13 +171,13 @@ VanillaTilt.init(document.querySelectorAll(".tilt"), {
 // <!-- tilt js effect ends -->
 
 // pre loader start
-// function loader() {
-//     document.querySelector('.loader-container').classList.add('fade-out');
-// }
-// function fadeOut() {
-//     setInterval(loader, 500);
-// }
-// window.onload = fadeOut;
+function loader() {
+  document.querySelector(".loader-container").classList.add("fade-out");
+}
+function fadeOut() {
+  setInterval(loader, 500);
+}
+window.onload = fadeOut;
 // pre loader end
 
 // disable developer mode

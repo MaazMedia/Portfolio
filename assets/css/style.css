@@ -749,8 +749,9 @@ header .navbar ul li a:hover {
 }
 .work .desc .btns {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
+
   margin-top: 2rem;
 }
 .work .desc .btns .btn {
