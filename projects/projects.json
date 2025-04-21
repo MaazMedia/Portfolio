@@ -1,14 +1,14 @@
 [
-  {
-    "name": "Restaurant Website",
-    "desc": "Developed a user-friendly website for Ajwa Bakers using HTML, CSS, and JavaScript.",
-    "image": "ajwabakers",
-    "category": "Business Websites",
-    "links": {
-      "view": "https://maazmedia.github.io/ajwabakers",
-      "code": "https://github.com/maazmedia/ajwabakers"
-    }
-  },
+{
+  "name": "Marci by Jill (Squarespace Redesign)",
+  "desc": "Redesigned and optimized a Squarespace-based website for a luxury fashion brand. The project involved full SEO structuring, font and UI improvements, and mobile responsiveness enhancements to meet both aesthetic and technical standards.",
+  "image": "marci",
+  "category": "Shopping Websites",
+  "links": {
+    "view": "https://www.marcibyjill.com",
+    "code": ""
+  }
+},
   {
     "name": "Tic Tac Toe",
     "desc": "Created an engaging Tic Tac Toe game to demonstrate advanced JavaScript skills.",
