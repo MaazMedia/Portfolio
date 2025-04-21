@@ -6,7 +6,6 @@
   "category": "Shopping Websites",
   "links": {
     "view": "https://www.marcibyjill.com",
-    "code": ""
   }
 },
   {
@@ -48,11 +47,11 @@
     "links": { "view": "https://www.thelimeclub.com/" }
   },
   {
-    "name": "Dermify AI",
-    "desc": "Created a tool for Dermify AI, featuring face analysis and health management.",
-    "image": "dermifyai_com",
-    "category": "Health Websites",
-    "links": { "view": "https://dermifyai.com/" }
+    "name": "On Open",
+    "desc": "Redesigned the website and functionality for client.",
+    "image": "onopen",
+    "category": "Business Websites",
+    "links": { "view": "https://onopen.xyz/" }
   },
   {
     "name": "Project Tutor",
