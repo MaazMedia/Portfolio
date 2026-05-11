@@ -472,7 +472,7 @@ a { text-decoration: none; color: inherit; }
 .project-card:hover .project-bg { transform: scale(1.04); }
 
 /* Per-project placeholder colors + real image paths */
-.bg-mbm      { background-color: #0e2140; background-image: url('../images/mbm-preview.jpg'); }
+.bg-mbm      { background-color: #0e2140; background-image: url('../images/modernbodymethod-preview.png'); }
 .bg-blaqgpt  { background-color: #140e2a; background-image: url('../images/blaqgpt-preview.png'); }
 .bg-valiexa  { background-color: #290e15; background-image: url('../images/valiexa-preview.png'); }
 .bg-doodles  { background-color: #0a1625; background-image: url('../images/shaheendiagnostics_online.png'); }
