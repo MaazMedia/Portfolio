@@ -1,100 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link id='favicon' rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-png">
-    <title>Projects | Portfolio Maaz  Saeed</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <title>Projects — GeniusDev Studio</title>
+  <meta name="description" content="Full project gallery — web apps, AI platforms, Glide no-code apps, and business websites built by GeniusDev Studio." />
+  <link rel="canonical" href="https://geniusdev.studio/projects/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://geniusdev.studio/projects/" />
+  <meta property="og:title" content="Projects — GeniusDev Studio" />
+  <meta property="og:description" content="Full project gallery — web apps, AI platforms, Glide no-code apps, and business websites built by GeniusDev Studio." />
+  <meta property="og:image" content="https://geniusdev.studio/assets/images/ogimage.jpg" />
+
+  <link rel="icon" type="image/png" href="../assets/images/favicon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
-<body oncontextmenu="return false">
+<body>
 
-<!-- navbar starts -->
-<header>
-        <a href="/" class="logo"><i class="fab fa-node-js"></i> Maaz </a>
-
-        <div id="menu" class="fas fa-bars"></div>
-        <nav class="navbar">
-            <ul>
-            <li><a href="/#home">Home</a></li>
-            <li><a href="/#about">About</a></li>
-            <li><a href="/#skills">Skills</a></li>
-            <li><a href="/#education">Education</a></li>
-            <li><a class="active" href="/#work">Work</a></li>
-            <li><a href="/#experience">Experience</a></li>
-            <li><a href="/#contact">Contact</a></li>
-            </ul>
-        </nav>
-</header>
-<!-- navbar ends -->
-
-<!-- work project section starts -->
-<section class="work" id="work">
-
-  <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
-  
-  <div id="filters" class="button-group">
-    <button class="btn is-checked" data-filter="*">All Projects</button>
-    <button class="btn" data-filter=".mern">MERN Stack</button>
-    <button class="btn" data-filter=".lamp">LAMP Stack</button>
-    <button class="btn" data-filter=".basicweb">Basic Web</button>
-    <button class="btn" data-filter=".android">Android App</button>
+<!-- ── Nav ── -->
+<nav class="nav scrolled" id="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">GeniusDev Studio</a>
+    <ul class="nav-links">
+      <li><a href="/#projects">Work</a></li>
+      <li><a href="/#services">Services</a></li>
+      <li><a href="/#about">About</a></li>
+      <li><a href="/#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="/#calendly" class="btn btn-purple btn-sm">Book a Call</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
+</nav>
 
-  <div class="box-container">
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="/#projects">Work</a>
+  <a href="/#services">Services</a>
+  <a href="/#about">About</a>
+  <a href="/#contact">Contact</a>
+  <div class="mobile-menu-cta">
+    <a href="/#calendly" class="btn btn-primary">Book a Call</a>
+  </div>
+</div>
 
-    <!-- <div class="box tilt">
-      <img src="/assets/images/projects/agecalc.PNG" alt="" />
-      <div class="content">
-        <div class="tag">
-        <h3>Portfolio Website</h3>
-        </div>
-        <div class="desc">
-          <p>Personal portfolio website. Don't need much info about it, just scroll down. You're here only!</p>
-          <div class="btns">
-            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="#" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+
+<!-- ── Page Hero ── -->
+<div class="page-hero">
+  <p class="section-label" data-animate>Our Work</p>
+  <h1 class="page-hero-heading" data-animate data-delay="1">Every product we've shipped</h1>
+  <p class="page-hero-sub" data-animate data-delay="2">
+    Web apps, AI platforms, no-code solutions, and business websites — built for real results.
+  </p>
+</div>
+
+
+<!-- ── Gallery ── -->
+<section class="section" style="padding-top: 0;">
+  <div class="container">
+
+    <!-- Filter Bar -->
+    <div class="filter-bar" data-animate>
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web-app">Web App</button>
+      <button class="filter-btn" data-filter="ai-platform">AI Platform</button>
+      <button class="filter-btn" data-filter="business-site">Business Site</button>
+      <button class="filter-btn" data-filter="no-code">No-Code</button>
+    </div>
+
+    <!-- Project Grid -->
+    <div class="projects-gallery" id="gallery">
+
+      <!-- 1. ModernBodyMethod -->
+      <div class="gallery-card" data-categories="web-app saas" data-animate>
+        <div class="gallery-card-img bg-mbm" style="background-image: url('../assets/images/mbm-preview.jpg');"></div>
+        <div class="gallery-card-body">
+          <h2 class="gallery-card-title">ModernBodyMethod</h2>
+          <p class="gallery-card-desc">Fitness coaching platform with white-label gym deployment. Supports 500+ concurrent users.</p>
+          <div class="gallery-card-tags">
+            <span class="gallery-card-tag">Web App</span>
+            <span class="gallery-card-tag">SaaS</span>
+            <span class="gallery-card-tag">Next.js</span>
+            <span class="gallery-card-tag">Supabase</span>
           </div>
+          <a href="https://modernbodymethod.com" class="gallery-card-link" target="_blank" rel="noopener">
+            Visit Live Site
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
         </div>
       </div>
-    </div> -->   
+
+      <!-- 2. BlaqGPT -->
+      <div class="gallery-card" data-categories="ai-platform web-app" data-animate data-delay="1">
+        <div class="gallery-card-img bg-blaqgpt" style="background-image: url('../assets/images/blaqgpt-preview.jpg');"></div>
+        <div class="gallery-card-body">
+          <h2 class="gallery-card-title">BlaqGPT</h2>
+          <p class="gallery-card-desc">Culturally intelligent AI assistant. Custom GPT interface built for real people.</p>
+          <div class="gallery-card-tags">
+            <span class="gallery-card-tag">AI Platform</span>
+            <span class="gallery-card-tag">Web App</span>
+          </div>
+          <a href="https://blaqgpt.com" class="gallery-card-link" target="_blank" rel="noopener">
+            Visit Live Site
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- 3. Valiexa -->
+      <div class="gallery-card" data-categories="ai-platform" data-animate data-delay="2">
+        <div class="gallery-card-img bg-valiexa" style="background-image: url('../assets/images/valiexa-preview.jpg');"></div>
+        <div class="gallery-card-body">
+          <h2 class="gallery-card-title">Valiexa</h2>
+          <p class="gallery-card-desc">World's first AI-powered boxing prestige platform. Fighter profiles, reputation scoring, fan ecosystem.</p>
+          <div class="gallery-card-tags">
+            <span class="gallery-card-tag">AI Platform</span>
+            <span class="gallery-card-tag">WordPress</span>
+          </div>
+          <a href="https://valiexa.com" class="gallery-card-link" target="_blank" rel="noopener">
+            Visit Live Site
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- 4. Wisconsin Designer Doodles -->
+      <div class="gallery-card" data-categories="business-site" data-animate>
+        <div class="gallery-card-img bg-doodles" style="background-image: url('../assets/images/doodles-preview.jpg');"></div>
+        <div class="gallery-card-body">
+          <h2 class="gallery-card-title">Wisconsin Designer Doodles</h2>
+          <p class="gallery-card-desc">Premium breeder website built for trust and conversions.</p>
+          <div class="gallery-card-tags">
+            <span class="gallery-card-tag">Business Site</span>
+          </div>
+          <a href="https://wisconsindesignerdoodles.com" class="gallery-card-link" target="_blank" rel="noopener">
+            Visit Live Site
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- 5. LovesFootball -->
+      <div class="gallery-card" data-categories="business-site web-app" data-animate data-delay="1">
+        <div class="gallery-card-img bg-football" style="background-image: url('../assets/images/football-preview.jpg');"></div>
+        <div class="gallery-card-body">
+          <h2 class="gallery-card-title">LovesFootball</h2>
+          <p class="gallery-card-desc">Sports content platform for football enthusiasts.</p>
+          <div class="gallery-card-tags">
+            <span class="gallery-card-tag">Business Site</span>
+            <span class="gallery-card-tag">Web App</span>
+          </div>
+          <a href="https://lovesfootball.com" class="gallery-card-link" target="_blank" rel="noopener">
+            Visit Live Site
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- 6. Doha Ultimate Tennis -->
+      <div class="gallery-card" data-categories="business-site web-app" data-animate data-delay="2">
+        <div class="gallery-card-img bg-tennis" style="background-image: url('../assets/images/tennis-preview.jpg');"></div>
+        <div class="gallery-card-body">
+          <h2 class="gallery-card-title">Doha Ultimate Tennis</h2>
+          <p class="gallery-card-desc">Full-featured sports platform for a premier tennis league in Doha, Qatar.</p>
+          <div class="gallery-card-tags">
+            <span class="gallery-card-tag">Business Site</span>
+            <span class="gallery-card-tag">Web App</span>
+          </div>
+          <a href="https://dohaultimatetennis.com" class="gallery-card-link" target="_blank" rel="noopener">
+            Visit Live Site
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div><!-- /gallery -->
+
+    <!-- Empty state -->
+    <div id="emptyState" style="display:none; text-align:center; padding: 80px 0; color: var(--text-muted); font-size: 15px;">
+      No projects in this category yet.
+    </div>
 
   </div>
-
-  <div class="backbtn">
-    <a href="/#work" class="btn">
-        <i class="fas fa-arrow-left"></i>
-        <span>Back to Home</span>
-  </a>
-  </div>
-
 </section>
-<!-- work project section ends -->
-
-<!-- scroll top btn -->
-<a href="#work" class="fas fa-angle-up" id="scroll-top"></a>
-<!-- scroll back to top -->
 
 
-<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
-<!-- jquery cdn -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- ── Footer ── -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <p class="footer-brand-name">GeniusDev Studio</p>
+      <p class="footer-brand-sub">Building digital products that grow businesses.</p>
+      <div class="social-icons">
+        <a href="https://instagram.com/maazdeveloper" class="social-icon" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://github.com/MaazMedia" class="social-icon" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/maazdeveloper" class="social-icon" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </div>
+    </div>
+    <div>
+      <p class="footer-heading">Quick Links</p>
+      <ul class="footer-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/#services">Services</a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-heading">Get in Touch</p>
+      <ul class="footer-links">
+        <li><a href="mailto:maaz@geniusdev.studio">maaz@geniusdev.studio</a></li>
+        <li><a href="tel:+923311400974">+92 331 1400974</a></li>
+        <li><a href="https://wa.me/923311400974" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="/#calendly">Book a Free Call</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 GeniusDev Studio</span>
+    <span>maaz@geniusdev.studio</span>
+  </div>
+</footer>
 
-<!-- vanilla tilt.js links -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="../assets/js/app.js"></script>
+<script>
+(function () {
+  /* ── Projects filter ── */
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const cards      = document.querySelectorAll('#gallery .gallery-card');
+  const emptyState = document.getElementById('emptyState');
 
-<!-- scroll reveal anim -->
-<script src="https://unpkg.com/scrollreveal"></script>
+  function applyFilter(filter) {
+    let visible = 0;
 
-<!-- isotope filter plugin cdn -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    cards.forEach(card => {
+      const cats = card.dataset.categories || '';
+      const match = filter === 'all' || cats.split(' ').includes(filter);
 
-<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+      if (match) {
+        card.removeAttribute('data-hidden');
+        card.style.display = '';
+        visible++;
+      } else {
+        card.setAttribute('data-hidden', '');
+        card.style.display = 'none';
+      }
+    });
 
-<script src="./script.js"></script>
+    emptyState.style.display = visible === 0 ? 'block' : 'none';
+  }
 
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      applyFilter(btn.dataset.filter);
+    });
+  });
+})();
+</script>
 </body>
 </html>
