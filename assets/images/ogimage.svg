@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#000000"/>
+      <stop offset="100%" stop-color="#0a0a0f"/>
+    </linearGradient>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7B5EA7"/>
+      <stop offset="100%" stop-color="#4F8EF7"/>
+    </linearGradient>
+    <radialGradient id="orb1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7B5EA7" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#7B5EA7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4F8EF7" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#4F8EF7" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Grid pattern -->
+    <pattern id="grid" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M 72 0 L 0 0 0 72" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Grid lines -->
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Ambient orbs -->
+  <ellipse cx="200" cy="200" rx="380" ry="320" fill="url(#orb1)"/>
+  <ellipse cx="1050" cy="430" rx="300" ry="260" fill="url(#orb2)"/>
+
+  <!-- Border frame -->
+  <rect x="40" y="40" width="1120" height="550" rx="16" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- Logo / Brand mark -->
+  <text x="80" y="120" font-family="Inter, -apple-system, sans-serif" font-size="22" font-weight="600" fill="rgba(255,255,255,0.5)" letter-spacing="0.5">GeniusDev Studio</text>
+
+  <!-- Gradient separator line under logo -->
+  <rect x="80" y="134" width="120" height="2" rx="1" fill="url(#grad)"/>
+
+  <!-- Main headline -->
+  <text x="80" y="270" font-family="Inter, -apple-system, sans-serif" font-size="72" font-weight="700" fill="#ffffff" letter-spacing="-2">We Build Digital</text>
+  <text x="80" y="360" font-family="Inter, -apple-system, sans-serif" font-size="72" font-weight="700" letter-spacing="-2">
+    <tspan fill="#ffffff">Products That </tspan><tspan fill="url(#grad)">Grow</tspan>
+  </text>
+  <text x="80" y="450" font-family="Inter, -apple-system, sans-serif" font-size="72" font-weight="700" fill="#ffffff" letter-spacing="-2">Businesses.</text>
+
+  <!-- Subtext -->
+  <text x="80" y="520" font-family="Inter, -apple-system, sans-serif" font-size="20" font-weight="400" fill="rgba(255,255,255,0.45)" letter-spacing="0.2">Full-stack web apps · Glide Expert · AI Platforms · geniusdev.studio</text>
+
+  <!-- Badge pill top-right -->
+  <rect x="980" y="80" width="180" height="38" rx="19" fill="rgba(123,94,167,0.2)" stroke="rgba(123,94,167,0.4)" stroke-width="1"/>
+  <text x="1070" y="104" font-family="Inter, -apple-system, sans-serif" font-size="14" font-weight="500" fill="#a78bfa" text-anchor="middle" letter-spacing="0.3">Top Rated · Upwork</text>
+</svg>

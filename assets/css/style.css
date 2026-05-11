@@ -1249,6 +1249,18 @@ footer::before {
   background: linear-gradient(to right, transparent, var(--purple) 50%, transparent);
 }
 
+/* ── Grid background ── */
+.grid-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.038) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.038) 1px, transparent 1px);
+  background-size: 72px 72px;
+}
+
 /* ── Reduced motion: respect user preference ── */
 @media (prefers-reduced-motion: reduce) {
   .hero-orb,
