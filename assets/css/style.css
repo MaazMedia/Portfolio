@@ -473,11 +473,11 @@ a { text-decoration: none; color: inherit; }
 
 /* Per-project placeholder colors + real image paths */
 .bg-mbm      { background-color: #0e2140; background-image: url('../images/mbm-preview.jpg'); }
-.bg-blaqgpt  { background-color: #140e2a; background-image: url('../images/blaqgpt-preview.jpg'); }
-.bg-valiexa  { background-color: #290e15; background-image: url('../images/valiexa-preview.jpg'); }
-.bg-doodles  { background-color: #0e2918; background-image: url('../images/doodles-preview.jpg'); }
-.bg-football { background-color: #132009; background-image: url('../images/football-preview.jpg'); }
-.bg-tennis   { background-color: #0e1f2a; background-image: url('../images/tennis-preview.jpg'); }
+.bg-blaqgpt  { background-color: #140e2a; background-image: url('../images/blaqgpt-preview.png'); }
+.bg-valiexa  { background-color: #290e15; background-image: url('../images/valiexa-preview.png'); }
+.bg-doodles  { background-color: #0a1625; background-image: url('../images/shaheendiagnostics_online.png'); }
+.bg-football { background-color: #1a0e25; background-image: url('../images/dudesplay_games.png'); }
+.bg-tennis   { background-color: #0e1f2a; background-image: url('../images/dohaultimatetennis_com.png'); }
 
 .project-overlay {
   position: absolute;
