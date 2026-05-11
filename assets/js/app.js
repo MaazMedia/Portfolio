@@ -203,7 +203,49 @@
 
 
   /* ─────────────────────────────────────────────
-     7. ABOUT PHOTO — graceful fallback
+     7. TYPEWRITER — rotating hero word
+     ───────────────────────────────────────────── */
+  (function initTypewriter() {
+    const el = document.getElementById('typeWord');
+    if (!el) return;
+
+    const words = ['Grow', 'Scale', 'Transform', 'Launch'];
+    let index = 0;
+
+    function cycle() {
+      index = (index + 1) % words.length;
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(-10px)';
+      setTimeout(() => {
+        el.textContent = words[index];
+        el.style.opacity = '1';
+        el.style.transform = 'translateY(0)';
+      }, 260);
+    }
+
+    /* Start cycling after 2.5 s, then every 2.8 s */
+    setTimeout(() => setInterval(cycle, 2800), 2500);
+  })();
+
+
+  /* ─────────────────────────────────────────────
+     8. FLOATING CTA — appears after scroll / delay
+     ───────────────────────────────────────────── */
+  (function initFloatingCta() {
+    const cta = document.getElementById('floatingCta');
+    if (!cta) return;
+
+    function show() { cta.classList.add('visible'); }
+
+    setTimeout(show, 3500);
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 420) show();
+    }, { passive: true });
+  })();
+
+
+  /* ─────────────────────────────────────────────
+     9. ABOUT PHOTO — graceful fallback
      ───────────────────────────────────────────── */
   const aboutImg = document.querySelector('.about-photo');
   if (aboutImg) {
