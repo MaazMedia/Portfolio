@@ -38,6 +38,9 @@
 </head>
 <body>
 
+<!-- Custom cursor glow (desktop only) -->
+<div id="cursorGlow" class="cursor-glow" aria-hidden="true"></div>
+
 <!-- ═══════════════════════════════════
      NAVIGATION
      ═══════════════════════════════════ -->
@@ -77,7 +80,12 @@
      HERO
      ═══════════════════════════════════ -->
 <section class="hero" id="hero">
-  <div class="hero-glow"></div>
+  <!-- Animated gradient orbs -->
+  <div class="hero-orbs" aria-hidden="true">
+    <div class="hero-orb hero-orb--1"></div>
+    <div class="hero-orb hero-orb--2"></div>
+    <div class="hero-orb hero-orb--3"></div>
+  </div>
 
   <div class="hero-content">
     <h1 class="hero-heading" data-animate>
@@ -114,12 +122,12 @@
   <div class="stats-grid">
 
     <div class="stat-item" data-animate>
-      <span class="stat-value">$7,000+</span>
+      <span class="stat-value" data-count="7000" data-count-prefix="$" data-count-suffix="+">$7,000+</span>
       <span class="stat-label">Earned on Upwork</span>
     </div>
 
     <div class="stat-item" data-animate data-delay="1">
-      <span class="stat-value">31</span>
+      <span class="stat-value" data-count="31">31</span>
       <span class="stat-label">Projects Completed</span>
     </div>
 
@@ -449,6 +457,10 @@
      ═══════════════════════════════════ -->
 <section class="contact-section" id="contact">
   <div class="contact-bg-glow"></div>
+  <div class="contact-orbs" aria-hidden="true">
+    <div class="contact-orb contact-orb--1"></div>
+    <div class="contact-orb contact-orb--2"></div>
+  </div>
   <div class="contact-content">
     <h2 class="contact-heading" data-animate>Ready to build<br>something?</h2>
     <p class="contact-sub" data-animate data-delay="1">

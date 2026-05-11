@@ -1050,3 +1050,232 @@ footer {
   .projects-gallery { grid-template-columns: 1fr; }
   .filter-bar { gap: 6px; }
 }
+
+/* ════════════════════════════════════════════════
+   VISUAL ENHANCEMENT LAYER
+   Premium effects — no layout changes, visual only
+   ════════════════════════════════════════════════ */
+
+/* ── 1. Hero gradient animated background orbs ── */
+.hero-glow { display: none; } /* replaced by orb system */
+
+.hero-orbs {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.35;
+  will-change: transform;
+}
+
+.hero-orb--1 {
+  width: 600px; height: 600px;
+  background: #7B5EA7;
+  top: -80px; left: -120px;
+  animation: orbFloat1 10s ease-in-out infinite;
+}
+
+.hero-orb--2 {
+  width: 500px; height: 500px;
+  background: #4F8EF7;
+  top: 15%; right: -100px;
+  animation: orbFloat2 8s ease-in-out infinite;
+}
+
+.hero-orb--3 {
+  width: 400px; height: 400px;
+  background: #2D1B69;
+  bottom: -40px; left: 38%;
+  animation: orbFloat3 12s ease-in-out infinite;
+}
+
+@keyframes orbFloat1 {
+  0%, 100% { transform: translate(0, 0); }
+  33%       { transform: translate(60px, 40px); }
+  66%       { transform: translate(-30px, 80px); }
+}
+
+@keyframes orbFloat2 {
+  0%, 100% { transform: translate(0, 0); }
+  50%       { transform: translate(-80px, 60px); }
+}
+
+@keyframes orbFloat3 {
+  0%, 100% { transform: translate(0, 0); }
+  25%       { transform: translate(-40px, -60px); }
+  75%       { transform: translate(60px, 30px); }
+}
+
+/* Radial vignette — edges darker, center brighter */
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 45%, transparent 35%, rgba(0,0,0,0.55) 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── 2. Custom cursor glow ── */
+.cursor-glow {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(123, 94, 167, 0.42);
+  filter: blur(20px);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease, background 0.3s ease;
+  will-change: left, top;
+}
+
+.cursor-glow.visible  { opacity: 1; }
+.cursor-glow.hovering { width: 80px; height: 80px; background: rgba(123, 94, 167, 0.58); }
+
+/* ── 4. Project card hover glow + arrow nudge ── */
+.project-card {
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(123, 94, 167, 0.5);
+  box-shadow: 0 0 0 1px rgba(123, 94, 167, 0.5), 0 0 30px rgba(123, 94, 167, 0.15);
+}
+
+.project-link {
+  transition: color 0.2s, transform 0.25s ease;
+}
+
+.project-card:hover .project-link {
+  transform: translateX(4px);
+}
+
+/* Shimmer skeleton on placeholder areas */
+.project-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    transparent 35%,
+    rgba(255, 255, 255, 0.045) 50%,
+    transparent 65%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2.8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes shimmer {
+  0%   { background-position: 200% center; }
+  100% { background-position: -200% center; }
+}
+
+/* ── 6. Nav glassmorphism upgrade ── */
+.nav.scrolled {
+  background: rgba(0, 0, 0, 0.72);
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+}
+
+/* ── 7. "Grow" animated gradient ── */
+.gradient-text {
+  background: linear-gradient(135deg, #7B5EA7 0%, #4F8EF7 40%, #9B7EC7 70%, #4F8EF7 100%);
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 3s linear infinite;
+}
+
+@keyframes gradientShift {
+  0%   { background-position: 0% center; }
+  100% { background-position: 300% center; }
+}
+
+/* ── 8. Contact section orbs ── */
+.contact-orbs {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.contact-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.25;
+  will-change: transform;
+}
+
+.contact-orb--1 {
+  width: 300px; height: 300px;
+  background: #7B5EA7;
+  top: -60px; left: -60px;
+  animation: orbFloat1 10s ease-in-out infinite;
+}
+
+.contact-orb--2 {
+  width: 300px; height: 300px;
+  background: #4F8EF7;
+  bottom: -60px; right: -60px;
+  animation: orbFloat2 8s ease-in-out infinite;
+}
+
+/* ── 9. Footer gradient top border ── */
+footer {
+  border-top: none;
+  position: relative;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--purple) 50%, transparent);
+}
+
+/* ── Reduced motion: respect user preference ── */
+@media (prefers-reduced-motion: reduce) {
+  .hero-orb,
+  .contact-orb,
+  .project-bg::after {
+    animation: none !important;
+  }
+
+  .gradient-text {
+    animation: none !important;
+    background-size: 100% auto;
+  }
+
+  .cursor-glow {
+    display: none !important;
+  }
+
+  [data-animate] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .project-card,
+  .project-link,
+  .service-card,
+  .profile-card {
+    transition: none !important;
+  }
+}
